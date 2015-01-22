@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600&subset=latin,latin-ext);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	padding-top: 0.5cm;
+}
+
+#SMS_UCode{
+	display: none;
+}
+
+.onoffswitch {
+	position: relative; width: 97px;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+	display: none;
+}
+.onoffswitch-label {
+	display: block; overflow: hidden; cursor: pointer;
+	border: 2px solid #999999; border-radius: 50px;
+}
+.onoffswitch-inner {
+	display: block; width: 200%; margin-left: -100%;
+	-moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+	-o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+	display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+	font-size: 18px; color: white; font-family: 'Open Sans', sans-serif; font-weight: bold;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+	content: "Evet";
+	padding-left: 12px;
+	background-color: #8CE196; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+	content: "Hayır";
+	padding-right: 12px;
+	background-color: #F06161; color: #FFFFFF;
+	text-align: right;
+}
+.onoffswitch-switch {
+	display: block; width: 33px; margin: -4.5px;
+	background: #FFFFFF;
+	border: 2px solid #999999; border-radius: 50px;
+	position: absolute; top: 0; bottom: 0; right: 69px;
+	-moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+	-o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+	right: 0px;
+}
