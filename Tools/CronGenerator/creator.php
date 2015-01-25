@@ -680,7 +680,7 @@ $tweet_cron = $tweet_min_cron . " " . $tweet_hour_cron . " " . $tweet_day_cron .
 
 
 //DOSYA OLUŞTUR ve İNDİRT
-$cron_data = $sms_cron . "\n" . $mail_cron . "\n" . $ftp_cron . "\n" . $skype_cron . "\n" . $face_cron . "\n" . $tweet_cron;
+$cron_data = $sms_cron . "\n" . $mail_cron . "\n" . $ftp_cron . "\n" . $skype_cron . "\n" . $face_cron . "\n" . $tweet_cron . "\n";
 header('Content-Description: File Transfer');
 header('Content-Type: application/octet-stream');
 header('Content-Disposition: attachment; filename=cron.txt');
